@@ -2,7 +2,7 @@
 
 To make a Dataflow template:
 
-python beampipeline.py \
+python beampip.py \
    --runner DataflowRunner \
    --staging_location gs://<> \
    --temp_location gs://<> \
