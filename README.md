@@ -1,3 +1,6 @@
+Aim: Deliver a bunch of low volume messages from Pubsub to Bigquery with not much preprocessing required. Messages get accumulated in Pubsub by events randomly distributed in time and there is no need for the messages to be immediately available in Bigquery. So no need for a constantly running job and no worries about the latency.
+Solution:
+
 Apache Beam pipeline to deliver messages accumulated in pubsub to bigquery.
 
 publish.py: Use it to publish test data to a pubsub topic.
