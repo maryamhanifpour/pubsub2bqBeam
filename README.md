@@ -22,3 +22,9 @@ python beampip.py \
    
    
 ![alt text](https://github.com/maryamhanifpour/pubsub2bqBeam/blob/master/beampip.PNG)
+
+
+Cons: 
+1. The safest way to close the running pipeline is via another API to Drain the specific pipeline.
+2. Still streaming inserts to Bigquery unless using Java SDK.
+3. Python SDK does not support  dynamic destinations, this is useful if some inputs are bad and cannot be processed, bad input should be written to another destination as dead letter.
