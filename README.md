@@ -1,6 +1,3 @@
-# pubsub2bqBeam
-
-
 Apache Beam pipeline to deliver messages accumulated in pubsub to bigquery.
 
 publish.py: Use it to publish test data to a pubsub topic.
