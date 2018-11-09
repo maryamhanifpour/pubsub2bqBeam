@@ -1,5 +1,12 @@
 # pubsub2bqBeam
 
+
+Apache Beam pipeline to deliver messages accumulated in pubsub to bigquery.
+
+publish.py: Use it to publish test data to a pubsub topic.
+
+beampip.py: Use it to to deliver messages accumalted in pubsub to a bigquery table by mnaking a dataflow template.
+
 To make a Dataflow template:
 
 python beampip.py \
